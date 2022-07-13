@@ -13,7 +13,7 @@ git clone https://github.com/LukeKeam/pi-kiosk
 # make service so it starts automatically
 echo "making service"
 append_line='[Unit]
-Description=Chromium Kiosk
+Description=pi-kiosk
 Wants=graphical.target
 After=graphical.target
 
