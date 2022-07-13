@@ -1,4 +1,5 @@
 # easy install options curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo bash ./install.sh
+# sudo systemctl stop pi-kiosk.service && rm install.sh && curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo bash ./install.sh
 # install git sed xdotool
 sudo apt-get update
 sudo apt-get install git sed xdotool chromium -y
