@@ -18,7 +18,7 @@ Wants=graphical.target
 After=graphical.target
 
 [Service]
-user='$USER'
+User='$USER'
 Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
