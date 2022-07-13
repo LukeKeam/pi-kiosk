@@ -1,8 +1,8 @@
 # easy install options curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo sh ./install.sh
 # create dir /pi-enviro
 echo "make directory /pi-kiosk "
-mkdir ~/pi-kiosk
-cd ~/pi-kiosk
+mkdir /home/"$USER"/pi-kiosk
+cd /home/"$USER"/pi-kiosk
 sudo chown -R "$USER":"$USER" /pi-kiosk
 # install git
 sudo apt-get update
