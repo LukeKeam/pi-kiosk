@@ -15,7 +15,7 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium
 
 # Launch Chromium
 # added some of my sites as an example
-/usr/bin/chromium --start-fullscreen --noerrdialogs --disable-infobars 'https://techgeek.biz' 'https://quick-time-management.com' 'https://average-athlete.com' 'https://techgeek.biz/raspberry-pi' 'https://fleet-track.org' 'https://github.com/LukeKeam' &
+/usr/bin/chromium --start-fullscreen --noerrdialogs --disable-infobars --no-sandbox 'https://techgeek.biz' 'https://quick-time-management.com' 'https://average-athlete.com' 'https://techgeek.biz/raspberry-pi' 'https://fleet-track.org' 'https://github.com/LukeKeam' &
 
 
 # Do loop, has a ping test just incase it is offline. Displays previous page rather than updating it and showing offline
