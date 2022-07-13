@@ -12,12 +12,13 @@ git clone https://github.com/LukeKeam/pi-kiosk .
 sudo chown -R "$USER":"$USER" /pi-kiosk
 # make service so it starts automatically
 echo "making service"
-append_line='[Unit]
+append_line="[Unit]
 Description=pi-kiosk
 Wants=graphical.target
 After=graphical.target
 
 [Service]
+user='$USER'
 Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
@@ -25,7 +26,7 @@ ExecStart=/bin/bash /pi-kiosk/pi-kiosk.sh
 Restart=on-abort
 
 [Install]
-WantedBy=graphical.target'
+WantedBy=graphical.target"
 echo "$append_line" | sudo tee /lib/systemd/system/pi-kiosk.service
 sudo systemctl enable pi-kiosk.service
 sudo systemctl start pi-kiosk.service
