@@ -1,7 +1,7 @@
 # easy install options curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo bash ./install.sh
 # install git sed xdotool
 sudo apt-get update
-sudo apt-get install git sed xdotool -y
+sudo apt-get install git sed xdotool chromium -y
 # make dir
 sudo mkdir /pi-kiosk
 cd /pi-kiosk
