@@ -1,5 +1,5 @@
 # easy install options curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo sh ./install.sh
-# creat dir /pi-enviro
+# create dir /pi-enviro
 echo "make directory /pi-kiosk "
 mkdir ~/pi-kiosk
 cd ~/pi-kiosk
