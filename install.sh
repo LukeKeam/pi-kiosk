@@ -8,7 +8,7 @@ echo "make directory /pi-kiosk "
 sudo apt-get update
 sudo apt-get install git sed xdotool -y
 # clone repository
-echo "downloading update"
+echo "downloading pi-kiosk"
 git clone https://github.com/LukeKeam/pi-kiosk
 #
 sudo chown -R "$USER":"$USER" pi-kiosk
