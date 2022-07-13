@@ -28,7 +28,7 @@ Restart=on-abort
 WantedBy=graphical.target'
 echo "$append_line" | sudo tee /lib/systemd/system/pi-kiosk.service
 sudo systemctl enable pi-kiosk.service
-sudo systemct start pi-kiosk.service
+sudo systemctl start pi-kiosk.service
 # done
 echo "all done!"
 
