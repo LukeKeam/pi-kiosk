@@ -1,6 +1,4 @@
-# easy install options curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo sh ./install.sh
-# create dir /pi-enviro
-echo "make directory /pi-kiosk "
+# easy install options curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo bash ./install.sh
 # install git sed xdotool
 sudo apt-get update
 sudo apt-get install git sed xdotool -y
