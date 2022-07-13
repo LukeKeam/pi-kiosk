@@ -1,15 +1,18 @@
 # easy install options curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo sh ./install.sh
 # create dir /pi-enviro
 echo "make directory /pi-kiosk "
-mkdir pi-kiosk
-sudo chown -R "$USER":"$USER" pi-kiosk
-cd pi-kiosk
+# mkdir pi-kiosk
+#
+# cd pi-kiosk
 # install git sed xdotool
 sudo apt-get update
 sudo apt-get install git sed xdotool -y
 # clone repository
 echo "downloading update"
 git clone https://github.com/LukeKeam/pi-kiosk
+#
+sudo chown -R "$USER":"$USER" pi-kiosk
+cd pi-kiosk
 # make service so it starts automatically
 echo "making service"
 append_line='[Unit]
